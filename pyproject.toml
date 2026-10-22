@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resume-intelligence"
+version = "0.1.0"
+description = "AI-powered resume intelligence for candidate extraction and HR RAG search"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "esfahanjones" }]
+license = { text = "MIT" }
+dependencies = [
+  "faker>=19.0.0",
+  "reportlab>=4.1.0",
+  "pydantic>=2.7.0",
+  "fastapi>=0.111.0",
+  "uvicorn>=0.30.0",
+  "langchain>=0.2.0",
+  "openai>=1.0.0",
+  "chromadb>=0.5.0",
+  "pandas>=2.0.0",
+  "numpy>=1.26.0",
+  "scikit-learn>=1.4.0",
+  "python-dotenv>=1.0.0",
+  "streamlit>=1.36.0",
+  "python-multipart>=0.0.1",
+  "mammoth>=1.8.0",
+  "pdfplumber>=0.11.2",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
